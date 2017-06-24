@@ -21,52 +21,52 @@ Following is a short exhibition of my work.
 
 This part aims to find strong-related variables to "Saleprice" among 80 variables, which would further help us do feature selection and engineering.  All these pictures was drew with R package(tabplots) to show the number and range of values for each variable as well as the covariance among the variables(both numeric and characters), sepecially with log_saleprice(here I use log of saleprice because we need to make saleprice normal which was origionally skew), which was on the right of every row as reference.  
   
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/1.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/1.png" width="700">  
 <b>Strongly related : OverallQual.</b>  
        
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/2.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/2.png" width="700">  
 <b>Strongly related : YearBuilt, YearRemodAdd, MasvnrArea, BsmtFinSF1.</b>   
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/3.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/3.png" width="700">  
 <b>Strongly related : TotalBsmtSF, (X)1stFlrSF.</b>   
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/4.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/4.png" width="700">  
 <b>Strongly related : GrLiveArea, BsmtFullBath, FullBath.</b>   
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/5.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/5.png" width="700">  
 <b>Strongly related : HalfBath, TotRmsAbvGrd,  FirePlaces.</b>  
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/6.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/6.png" width="700">  
 <b>Strongly related : GarageYrBlt, GarageCars, GarageArea, WoodDeskSF, OpenPorchSF.</b>   
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/7.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/7.png" width="700">  
 <b>Strongly related : None.</b>    
        
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/8.png">    
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/8.png" width="700">    
 <b>Strongly related : MSZonging.</b>   
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/9.png">    
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/9.png" width="700">    
 <b>Strongly related : LotShape.</b>   
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/10.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/10.png" width="700">  
 <b>Strongly related : None.</b>    
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/11.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/11.png" width="700">  
 <b>Strongly related : MasVnrType.</b>    
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/12.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/12.png" width="700">  
 <b>Strongly related : ExterQual, Foundation, BsmtQual.</b>      
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/13.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/13.png" width="700">  
 <b>Strongly related : BsmtExposure, HeatingQC.</b>      
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/14.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/14.png" width="700">  
 <b>Strongly related : KitchenQual, FireplaceQu.</b>      
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/15.png">    
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/15.png" width="700">    
 <b>Strongly related : GarageType, GarageFinsh.</b>      
       
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/16.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/16.png" width="700">  
 <b>Strongly related : None.</b>     
       
 Of all variables, OverallQual, YearBuilt, YearRemodAdd, MasvnrArea, BsmtFinSF1, TotalBsmtSF, BsmtFullBath, (X)1stFlrSF, GrLiveArea, FullBath, HalfBath, TotRmsAbvGrd, FirePlaces, GarageYrBlt, GarageCars, GarageArea, WoodDeskSF, OpenPorchSF, MSZonging, LotShape, MasVnrType,ExterQual, Foundation, BsmtQual, BsmtExposure, HeatingQC, KitchenQual, FireplaceQu, GarageType, GarageFinsh <b>show good shape resemblance or invert-similarity.</b>  
@@ -78,7 +78,7 @@ This means these variables are of <b>good correlations to "Saleprice".</b>
 <h5>2. Correlation visualization with R packages(corrplot, ggplot2)</h5>   
 <a href="#top" target="_self">Back to top</a>    
 This section is to find strong-related numeric variables to help us assure feature selection and better relate highly related variables for feature engineering.  
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/cor-10-1.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/cor-10-1.png" width="700">  
 Of all numeric variables, OverallQual, YearBuilt, YearRemodAdd, MasvnrArea, BsmtFinSF1, TotalBsmtSF, 1stFlrSF, GrLiveArea, FullBath, TotRmsAbvGrd, FirePlaces, GarageYrBlt, GarageCars, GarageArea, WoodDeskSF and OpenPorchSF show strong correlation with saleprice, which is in accordance with our conclusion above.   
   
 <b>Besides, because it is easy to judge the relationship of any two variables in this visualized correlation matrix, we can dig deeper to do feature engineering or something else interesting:)</b>    
@@ -90,7 +90,7 @@ Of all numeric variables, OverallQual, YearBuilt, YearRemodAdd, MasvnrArea, Bsmt
 <a href="#top" target="_self">Back to top</a>    
 <b> Ruling out outliers</b>  
 Firstly, we drop outliers in the train dataset to prevent imprecise prediction. To find outliers, we can make scatter plot with each numeric variable to "Saleprice", and find those extremely irregular ones. For example, in the GrLivArea variable, there are two obvious outliers when GrLivArea>4500, thus we can rule them out by setting GrLivArea<=4500, or drop out those that are bigger than 4500.   
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/GrLivArea_outliers.png">  
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/GrLivArea_outliers.png" width="700">  
 <b> Dealing with missing values </b>  
 Then, we need to combine train and test dataset together using 'rbind' to uniformize factor levels in these two dataframe(be sure to give NAs to test$SalePrice), which will help us a lot when making predictions.   
   
@@ -106,7 +106,7 @@ require(mice)
 imp.full <- mice(full_m, m=1, method='cart', printFlag=FALSE)  
 full_imp <- complete(imp.full)  
 </pre>
-<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/Lot area.png">   
+<img src="https://github.com/mxc19912008/readme_pics/raw/master/image/Lot area.png" width="700">   
 The imputed data (in red) appear to have a similar relationship to LotArea as the actual data (in blue), which means a good fit.    
 This gives an example of 'rpart' imputation  
 <pre>
