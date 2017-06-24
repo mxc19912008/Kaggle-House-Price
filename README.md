@@ -77,6 +77,7 @@ This means these variables are of <b>good correlations to "Saleprice".</b>
 <a name="2"> </a>  
 <h5>2. Correlation visualization with R packages(corrplot, ggplot2)</h5>   
 <a href="#top" target="_self">Back to top</a>    
+<p> </p>
 This section is to find strong-related numeric variables to help us assure feature selection and better relate highly related variables for feature engineering.  
 <img src="https://github.com/mxc19912008/readme_pics/raw/master/image/cor-10-1.png" width="700">  
 Of all numeric variables, OverallQual, YearBuilt, YearRemodAdd, MasvnrArea, BsmtFinSF1, TotalBsmtSF, 1stFlrSF, GrLiveArea, FullBath, TotRmsAbvGrd, FirePlaces, GarageYrBlt, GarageCars, GarageArea, WoodDeskSF and OpenPorchSF show strong correlation with saleprice, which is in accordance with our conclusion above.   
@@ -88,6 +89,7 @@ Of all numeric variables, OverallQual, YearBuilt, YearRemodAdd, MasvnrArea, Bsmt
 <a name="3"> </a>  
 <h5>3. Feature engineering, selection, modeling and prediction </h5>   
 <a href="#top" target="_self">Back to top</a>    
+<p> </p>
 <b> Ruling out outliers</b>  
 Firstly, we drop outliers in the train dataset to prevent imprecise prediction. To find outliers, we can make scatter plot with each numeric variable to "Saleprice", and find those extremely irregular ones. For example, in the GrLivArea variable, there are two obvious outliers when GrLivArea>4500, thus we can rule them out by setting GrLivArea<=4500, or drop out those that are bigger than 4500.   
 <img src="https://github.com/mxc19912008/readme_pics/raw/master/image/GrLivArea_outliers.png" width="700">  
