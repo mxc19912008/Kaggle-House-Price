@@ -5,7 +5,8 @@ The dataset was compiled by Dean De Cock for use in data science education.
 This project is based on two datasets of train and test. The train dataset is of 1460 items with 80 variables and one especially important one of "Saleprice", and we want to make prediction on saleprice of test dataset.</i>    
   
 Following is a short exhibition of my work.    
-  
+
+<a name="4"> </a> 
 <a href="#1">1. Correlation visualization with R packages(tabplots)</a>  
 <a href="#2">2. Correlation visualization with R packages(corrplot, ggplot2)</a>   
 <a href="#3">3. Feature engineering, selection, modeling and prediction</a>   
@@ -17,7 +18,7 @@ Following is a short exhibition of my work.
         
 <a name="1"> </a>  
 <h4>1. Correlation visualization with R packages(tabplots)_inspired by Laurae@Kaggle</h4>    
-<a href="#top" target="_self">Back to top</a>    
+<a href="#1">Back to top</a>    
 
 This part aims to find strong-related variables to "Saleprice" among 80 variables, which would further help us do feature selection and engineering.  All these pictures was drew with R package(tabplots) to show the number and range of values for each variable as well as the covariance among the variables(both numeric and characters), sepecially with log_saleprice(here I use log of saleprice because we need to make saleprice normal which was origionally skew), which was on the right of every row as reference.  
   
@@ -76,7 +77,7 @@ This means these variables are of <b>good correlations to "Saleprice".</b>
         
 <a name="2"> </a>  
 <h4>2. Correlation visualization with R packages(corrplot, ggplot2)</h4>   
-<a href="#top" target="_self">Back to top</a>    
+<a href="#1">Back to top</a>    
 <p> </p>
 This section is to find strong-related numeric variables to help us assure feature selection and better relate highly related variables for feature engineering.  
 <img src="https://github.com/mxc19912008/readme_pics/raw/master/image/cor-10-1.png" width="700">  
@@ -88,7 +89,7 @@ Of all numeric variables, OverallQual, YearBuilt, YearRemodAdd, MasvnrArea, Bsmt
       
 <a name="3"> </a>  
 <h4>3. Feature engineering, selection, modeling and prediction </h4>   
-<a href="#top" target="_self">Back to top</a>    
+<a href="#1">Back to top</a>   
 <p> </p>
 <b> Ruling out outliers</b>  
 Firstly, we drop outliers in the train dataset to prevent imprecise prediction. To find outliers, we can make scatter plot with each numeric variable to "Saleprice", and find those extremely irregular ones. For example, in the GrLivArea variable, there are two obvious outliers when GrLivArea>4500, thus we can rule them out by setting GrLivArea<=4500, or drop out those that are bigger than 4500.   
@@ -221,4 +222,4 @@ ept <- (epx+epl+prf)/3
 I got a score of 0.11975 on public leaderboard. There is a lot to be improved, for example, use more models.
 <img src="https://github.com/mxc19912008/readme_pics/raw/master/image/score.jpg">  
   
-<a href="#top" target="_self">Back to top</a>    
+<a href="#1">Back to top</a>   
