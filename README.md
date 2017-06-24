@@ -75,7 +75,7 @@ This means these variables are of <b>good correlations to "Saleprice".</b>
       
         
 <a name="2"> </a>  
-<h5>2. Correlation visualization with R packages(corrplot, ggplot2)</h5>   
+<h4>2. Correlation visualization with R packages(corrplot, ggplot2)</h4>   
 <a href="#top" target="_self">Back to top</a>    
 <p> </p>
 This section is to find strong-related numeric variables to help us assure feature selection and better relate highly related variables for feature engineering.  
@@ -87,7 +87,7 @@ Of all numeric variables, OverallQual, YearBuilt, YearRemodAdd, MasvnrArea, Bsmt
     
       
 <a name="3"> </a>  
-<h5>3. Feature engineering, selection, modeling and prediction </h5>   
+<h4>3. Feature engineering, selection, modeling and prediction </h4>   
 <a href="#top" target="_self">Back to top</a>    
 <p> </p>
 <b> Ruling out outliers</b>  
